@@ -1,0 +1,37 @@
+/* Container holding the image and the text */
+.mega-container {
+  position: relative;
+  text-align: center;
+}
+
+.mega-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 20px;
+  left: 16px;
+  font-size: 18px;
+}
+
+/*Farm Card*/
+.farm-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.testhover {
+ display: none;
+ position: absolute;
+ z-index: 2;
+}
+
+.farm-info-div:hover .testhover {
+  color: yellow;
+  display: block;
+  background-color: blue;
+}

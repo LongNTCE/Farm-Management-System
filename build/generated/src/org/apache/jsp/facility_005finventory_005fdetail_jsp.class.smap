@@ -1,0 +1,21 @@
+SMAP
+facility_005finventory_005fdetail_jsp.java
+JSP
+*S JSP
+*F
++ 0 facility_inventory_detail.jsp
+facility_inventory_detail.jsp
+*L
+1,63:54
+64:117,3
+65,36:120
+100:185,11
+101:196
+102,6:197,3
+108,2:215
+110:217,3
+111:220
+112:221,3
+113,9:224
+121,10:158
+*E

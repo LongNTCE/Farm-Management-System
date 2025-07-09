@@ -1,0 +1,601 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class manage_005fpond_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_forEach_var_items;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspInit() {
+    _jspx_tagPool_c_forEach_var_items = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+  }
+
+  public void _jspDestroy() {
+    _jspx_tagPool_c_forEach_var_items.release();
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("<!DOCTYPE html>\n");
+      out.write("\n");
+      out.write("<html lang=\"en\">\n");
+      out.write("    <head>\n");
+      out.write("        <meta charset=\"UTF-8\" />\n");
+      out.write("        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n");
+      out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n");
+      out.write("        <title>Document</title>\n");
+      out.write("\n");
+      out.write("        <script\n");
+      out.write("            src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js\"\n");
+      out.write("            crossorigin=\"anonymous\"\n");
+      out.write("        ></script>\n");
+      out.write("\n");
+      out.write("        <!--Bootstrap 5-->\n");
+      out.write("        <link\n");
+      out.write("            href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\"\n");
+      out.write("            rel=\"stylesheet\"\n");
+      out.write("            integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\"\n");
+      out.write("            crossorigin=\"anonymous\"\n");
+      out.write("            />\n");
+      out.write("\n");
+      out.write("        <!--Font awesome-->\n");
+      out.write("        <link\n");
+      out.write("            rel=\"stylesheet\"\n");
+      out.write("            href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css\"\n");
+      out.write("            integrity=\"sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==\"\n");
+      out.write("            crossorigin=\"anonymous\"\n");
+      out.write("            referrerpolicy=\"no-referrer\"\n");
+      out.write("            />\n");
+      out.write("        <script src=\"./js/modal.js\"></script>\n");
+      out.write("        <script src=\"./js/manage.js\"></script>\n");
+      out.write("        <link rel=\"stylesheet\" href=\"./css/manage.css\" />\n");
+      out.write("\n");
+      out.write("        <!-- Latest compiled and minified JavaScript -->\n");
+      out.write("        <!--JQuery 3.6.1-->\n");
+      out.write("        <script\n");
+      out.write("            src=\"//ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js\"\n");
+      out.write("            language=\"javascript\"\n");
+      out.write("            type=\"text/javascript\"\n");
+      out.write("        ></script>\n");
+      out.write("\n");
+      out.write("        <script\n");
+      out.write("            src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\"\n");
+      out.write("            integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\"\n");
+      out.write("            crossorigin=\"anonymous\"\n");
+      out.write("        ></script>\n");
+      out.write("        <script\n");
+      out.write("            src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\"\n");
+      out.write("            integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\"\n");
+      out.write("            crossorigin=\"anonymous\"\n");
+      out.write("        ></script>\n");
+      out.write("        <script>\n");
+      out.write("\n");
+      out.write("            $(document).ready(function () {\n");
+      out.write("                if ($(\"button.nav-link\").hasClass(\"active\")) {\n");
+      out.write("                    $(\".add-pond-button\").hide();\n");
+      out.write("                    $(\".add-inventoryItem-button \").hide();\n");
+      out.write("                }\n");
+      out.write("                ;\n");
+      out.write("            });\n");
+      out.write("        </script>\n");
+      out.write("\n");
+      out.write("        <script>\n");
+      out.write("            $(document).ready(function () {\n");
+      out.write("                $(\".nav-link-crop\").click(function () {\n");
+      out.write("                    $(\".add-crop-button\").show();\n");
+      out.write("                    $(\".add-inventoryItem-button\").hide();\n");
+      out.write("\n");
+      out.write("                });\n");
+      out.write("            });\n");
+      out.write("        </script>\n");
+      out.write("\n");
+      out.write("        <script>\n");
+      out.write("            $(document).ready(function () {\n");
+      out.write("                $(\".nav-link-pond\").click(function () {\n");
+      out.write("                    $(\".add-crop-button\").hide();\n");
+      out.write("                    $(\".add-inventoryItem-button\").show();\n");
+      out.write("\n");
+      out.write("                });\n");
+      out.write("            });\n");
+      out.write("        </script>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("        <script>\n");
+      out.write("            $(\"#myModal\").on(\"shown.bs.modal\", function () {\n");
+      out.write("                $(\"#myInput\").trigger(\"focus\");\n");
+      out.write("            });\n");
+      out.write("        </script>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("        <div class=\"container mb-5\">\n");
+      out.write("            <div class=\"mb-5\">\n");
+      out.write("                ");
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "./navBar.jsp", out, false);
+      out.write("\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("\n");
+      out.write("        <div class=\"container\">\n");
+      out.write("            <div class=\"mt-3\">\n");
+      out.write("                <h2>Pond Management</h2>\n");
+      out.write("                <div class=\"row\">\n");
+      out.write("                    <div class=\"col-12\">\n");
+      out.write("                        <nav>\n");
+      out.write("                            <div class=\"nav nav-tabs\" id=\"nav-tab\" role=\"tablist\">\n");
+      out.write("                                <button\n");
+      out.write("                                    class=\"nav-link active nav-link-crop\"\n");
+      out.write("                                    id=\"nav-link-crop\"\n");
+      out.write("                                    data-bs-toggle=\"tab\"\n");
+      out.write("                                    data-bs-target=\"#nav-home\"\n");
+      out.write("                                    type=\"button\"\n");
+      out.write("                                    role=\"tab\"\n");
+      out.write("                                    aria-controls=\"nav-home\"\n");
+      out.write("                                    aria-selected=\"true\"\n");
+      out.write("                                    >\n");
+      out.write("                                    Crop of Farm 1\n");
+      out.write("                                </button>\n");
+      out.write("                                <button\n");
+      out.write("                                    class=\"nav-link nav-link-pond\"\n");
+      out.write("                                    id=\"nav-profile-tab nav-link-pond\"\n");
+      out.write("                                    data-bs-toggle=\"tab\"\n");
+      out.write("                                    data-bs-target=\"#nav-profile\"\n");
+      out.write("                                    type=\"button\"\n");
+      out.write("                                    role=\"tab\"\n");
+      out.write("                                    aria-controls=\"nav-profile\"\n");
+      out.write("                                    aria-selected=\"false\"\n");
+      out.write("                                    >\n");
+      out.write("                                    Crop Inventory\n");
+      out.write("                                </button>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("                                <!-- Button trigger modal -->\n");
+      out.write("                                <!--Nav Link-->\n");
+      out.write("                                <button\n");
+      out.write("                                    type=\"button nav-link\"\n");
+      out.write("                                    id=\"add-crop-button\"\n");
+      out.write("                                    class=\"btn btn-primary add-crop-button\"\n");
+      out.write("                                    data-toggle=\"modal\"\n");
+      out.write("                                    data-target=\"#addCropModal\"\n");
+      out.write("                                    >\n");
+      out.write("                                    Add Crop\n");
+      out.write("                                </button>\n");
+      out.write("                                <button\n");
+      out.write("                                    type=\"button nav-link\"\n");
+      out.write("                                    id=\"add-inventoryItem-button\"\n");
+      out.write("                                    class=\"btn btn-danger add-inventoryItem-button\"\n");
+      out.write("                                    data-toggle=\"modal\"\n");
+      out.write("                                    data-target=\"#exampleModal\"\n");
+      out.write("                                    >\n");
+      out.write("                                    Add Item\n");
+      out.write("                                </button>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("                                <!--Select Option-->\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("                                <!--Add Farm Modal -->\n");
+      out.write("                                <div\n");
+      out.write("                                    class=\"modal fade\"\n");
+      out.write("                                    id=\"addCropModal\"\n");
+      out.write("                                    tabindex=\"-1\"\n");
+      out.write("                                    role=\"dialog\"\n");
+      out.write("                                    aria-labelledby=\"exampleModalLabel\"\n");
+      out.write("                                    aria-hidden=\"true\"\n");
+      out.write("                                    >\n");
+      out.write("                                    <div class=\"modal-dialog\" role=\"document\">\n");
+      out.write("                                        <div class=\"modal-content\">\n");
+      out.write("                                            <div class=\"modal-header\">\n");
+      out.write("                                                <h5 class=\"modal-title\" id=\"exampleModalLabel\">\n");
+      out.write("                                                    Enter your crop's information\n");
+      out.write("                                                </h5>\n");
+      out.write("                                                <button\n");
+      out.write("                                                    type=\"button\"\n");
+      out.write("                                                    class=\"close\"\n");
+      out.write("                                                    data-dismiss=\"modal\"\n");
+      out.write("                                                    aria-label=\"Close\"\n");
+      out.write("                                                    >\n");
+      out.write("                                                    <span aria-hidden=\"true\">&times;</span>\n");
+      out.write("                                                </button>\n");
+      out.write("                                            </div>\n");
+      out.write("                                            <div class=\"modal-body\">\n");
+      out.write("                                                <form>\n");
+      out.write("                                                    <div class=\"mb-3\">\n");
+      out.write("                                                        <label for=\"exampleInputEmail1\" class=\"form-label\"\n");
+      out.write("                                                               >Crop Name</label\n");
+      out.write("                                                        >\n");
+      out.write("                                                        <input type=\"text\" class=\"form-control\" id=\"\" />\n");
+      out.write("                                                    </div>\n");
+      out.write("                                                    <div class=\"mb-3\">\n");
+      out.write("                                                        <label\n");
+      out.write("                                                            for=\"exampleInputPassword1\"\n");
+      out.write("                                                            class=\"form-label\"\n");
+      out.write("                                                            >Crop Start Date</label\n");
+      out.write("                                                        >\n");
+      out.write("                                                        <input type=\"text\" class=\"form-control\" id=\"\" />\n");
+      out.write("                                                    </div>\n");
+      out.write("                                                    <div class=\"mb-3\">\n");
+      out.write("                                                        <label\n");
+      out.write("                                                            for=\"exampleInputPassword1\"\n");
+      out.write("                                                            class=\"form-label\"\n");
+      out.write("                                                            >Crop End Date</label\n");
+      out.write("                                                        >\n");
+      out.write("                                                        <input type=\"text\" class=\"form-control\" id=\"\" />\n");
+      out.write("                                                    </div>\n");
+      out.write("                                                </form>\n");
+      out.write("                                            </div>\n");
+      out.write("                                            <div class=\"modal-footer\">\n");
+      out.write("                                                <button\n");
+      out.write("                                                    type=\"button\"\n");
+      out.write("                                                    class=\"btn btn-secondary\"\n");
+      out.write("                                                    data-dismiss=\"modal\"\n");
+      out.write("                                                    >\n");
+      out.write("                                                    Close\n");
+      out.write("                                                </button>\n");
+      out.write("                                                <button type=\"button\" class=\"btn btn-primary\">\n");
+      out.write("                                                    Save changes\n");
+      out.write("                                                </button>\n");
+      out.write("                                            </div>\n");
+      out.write("                                        </div>\n");
+      out.write("                                    </div>\n");
+      out.write("                                </div>\n");
+      out.write("\n");
+      out.write("                                <!--Edit Farm Modal-->\n");
+      out.write("                                <div\n");
+      out.write("                                    class=\"modal fade\"\n");
+      out.write("                                    id=\"editFarmModal\"\n");
+      out.write("                                    tabindex=\"-1\"\n");
+      out.write("                                    role=\"dialog\"\n");
+      out.write("                                    aria-labelledby=\"exampleModalLabel\"\n");
+      out.write("                                    aria-hidden=\"true\"\n");
+      out.write("                                    >\n");
+      out.write("                                    <div class=\"modal-dialog\" role=\"document\">\n");
+      out.write("                                        <div class=\"modal-content\">\n");
+      out.write("                                            <div class=\"modal-header\">\n");
+      out.write("                                                <h5 class=\"modal-title\" id=\"exampleModalLabel\">\n");
+      out.write("                                                    Edit your farm's information\n");
+      out.write("                                                </h5>\n");
+      out.write("                                                <button\n");
+      out.write("                                                    type=\"button\"\n");
+      out.write("                                                    class=\"close\"\n");
+      out.write("                                                    data-dismiss=\"modal\"\n");
+      out.write("                                                    aria-label=\"Close\"\n");
+      out.write("                                                    >\n");
+      out.write("                                                    <span aria-hidden=\"true\">&times;</span>\n");
+      out.write("                                                </button>\n");
+      out.write("                                            </div>\n");
+      out.write("                                            <div class=\"modal-body\">\n");
+      out.write("                                                <form>\n");
+      out.write("                                                    <div class=\"mb-3\">\n");
+      out.write("                                                        <label for=\"exampleInputEmail1\" class=\"form-label\"\n");
+      out.write("                                                               >Farm Name</label\n");
+      out.write("                                                        >\n");
+      out.write("                                                        <input type=\"text\" class=\"form-control\" id=\"\" />\n");
+      out.write("                                                    </div>\n");
+      out.write("                                                    <div class=\"mb-3\">\n");
+      out.write("                                                        <label\n");
+      out.write("                                                            for=\"exampleInputPassword1\"\n");
+      out.write("                                                            class=\"form-label\"\n");
+      out.write("                                                            >Farm Address</label\n");
+      out.write("                                                        >\n");
+      out.write("                                                        <input type=\"text\" class=\"form-control\" id=\"\" />\n");
+      out.write("                                                    </div>\n");
+      out.write("                                                    <div class=\"mb-3\">\n");
+      out.write("                                                        <label\n");
+      out.write("                                                            for=\"exampleInputPassword1\"\n");
+      out.write("                                                            class=\"form-label\"\n");
+      out.write("                                                            >Farm Square</label\n");
+      out.write("                                                        >\n");
+      out.write("                                                        <input type=\"text\" class=\"form-control\" id=\"\" />\n");
+      out.write("                                                    </div>\n");
+      out.write("                                                </form>\n");
+      out.write("                                            </div>\n");
+      out.write("                                            <div class=\"modal-footer\">\n");
+      out.write("                                                <button\n");
+      out.write("                                                    type=\"button\"\n");
+      out.write("                                                    class=\"btn btn-secondary\"\n");
+      out.write("                                                    data-dismiss=\"modal\"\n");
+      out.write("                                                    >\n");
+      out.write("                                                    Close\n");
+      out.write("                                                </button>\n");
+      out.write("                                                <button type=\"button\" class=\"btn btn-primary\">\n");
+      out.write("                                                    Save changes\n");
+      out.write("                                                </button>\n");
+      out.write("                                            </div>\n");
+      out.write("                                        </div>\n");
+      out.write("                                    </div>\n");
+      out.write("                                </div>\n");
+      out.write("                            </div>\n");
+      out.write("                        </nav>\n");
+      out.write("                        <div class=\"tab-content mt-3\" id=\"nav-tabContent\">\n");
+      out.write("                            <!--Tab Pane Crop-->\n");
+      out.write("                            <div\n");
+      out.write("                                class=\"tab-pane fade show active\"\n");
+      out.write("                                id=\"nav-home\"\n");
+      out.write("                                role=\"tabpanel\"\n");
+      out.write("                                aria-labelledby=\"nav-home-tab\"\n");
+      out.write("                                >\n");
+      out.write("                                <div class=\"row mt-3\">\n");
+      out.write("                                    ");
+      if (_jspx_meth_c_forEach_0(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("                                </div>\n");
+      out.write("                            </div>\n");
+      out.write("                            <!--Tab Pane Inventory-->\n");
+      out.write("                            <div\n");
+      out.write("                                class=\"tab-pane fade\"\n");
+      out.write("                                id=\"nav-profile\"\n");
+      out.write("                                role=\"tabpanel\"\n");
+      out.write("                                aria-labelledby=\"nav-profile-tab\"\n");
+      out.write("                                >\n");
+      out.write("                                <table class=\"table table-striped\">\n");
+      out.write("                                    <thead>\n");
+      out.write("                                        <tr>\n");
+      out.write("                                            <th scope=\"col\">#</th>\n");
+      out.write("                                            <th scope=\"col\">Ten San Pham</th>\n");
+      out.write("                                            <th scope=\"col\">Ngay Nhap</th>\n");
+      out.write("                                            <th scope=\"col\">So luong</th>\n");
+      out.write("                                            <th scope=\"col\">Nguon nhap</th>\n");
+      out.write("                                            <th scope=\"col\">Ngay san xuat</th>\n");
+      out.write("                                            <th scope=\"col\">Ngay het han</th>\n");
+      out.write("                                        </tr>\n");
+      out.write("                                    </thead>\n");
+      out.write("                                    <tbody>\n");
+      out.write("\n");
+      out.write("                                        ");
+      if (_jspx_meth_c_forEach_1(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("                                    </tbody>\n");
+      out.write("                                </table>\n");
+      out.write("                            </div>\n");
+      out.write("                            <!--Tab Pane Season-->\n");
+      out.write("\n");
+      out.write("                        </div>\n");
+      out.write("\n");
+      out.write("                    </div>\n");
+      out.write("\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("\n");
+      out.write("            <!--Bookmark-->\n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+
+  private boolean _jspx_meth_c_forEach_0(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:forEach
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    _jspx_th_c_forEach_0.setPageContext(_jspx_page_context);
+    _jspx_th_c_forEach_0.setParent(null);
+    _jspx_th_c_forEach_0.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listPondByCropID}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_c_forEach_0.setVar("pc");
+    int[] _jspx_push_body_count_c_forEach_0 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_forEach_0 = _jspx_th_c_forEach_0.doStartTag();
+      if (_jspx_eval_c_forEach_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\n");
+          out.write("                                        <div class=\"column col-lg-3\">\n");
+          out.write("                                            <div class=\"card mb-3 farm-card\">\n");
+          out.write("                                                <div class=\"row no-gutters\">\n");
+          out.write("                                                    <div class=\"col-md-4\" style=\"max-height: 100%\">\n");
+          out.write("                                                        <img\n");
+          out.write("                                                            src=\"./images/jumbotron.jpg\"\n");
+          out.write("                                                            class=\"card-img\"\n");
+          out.write("                                                            alt=\"...\"\n");
+          out.write("                                                            />\n");
+          out.write("                                                    </div>\n");
+          out.write("                                                    <div class=\"col-md-8\">\n");
+          out.write("                                                        <div class=\"card-body\">\n");
+          out.write("                                                            <h4 class=\"card-title\">");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pc.pondName}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</h4>\n");
+          out.write("                                                            <div>\n");
+          out.write("                                                                <p class=\"card-text font-italic\">\n");
+          out.write("                                                                    <strong>Dien tich: </strong> ");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pc.pondSquare}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("\n");
+          out.write("                                                                </p>\n");
+          out.write("                                                                <p class=\"card-text font-italic\">\n");
+          out.write("                                                                    <strong>Do sau: </strong> ");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pc.pondDepth}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("\n");
+          out.write("                                                                </p>\n");
+          out.write("                                                                <p class=\"card-text font-italic\">\n");
+          out.write("                                                                    <strong>Gia ao: </strong> ");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pc.pondCost}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("\n");
+          out.write("                                                                </p>\n");
+          out.write("\n");
+          out.write("\n");
+          out.write("                                                            </div>\n");
+          out.write("                                                            <div class=\"row mt-2\">\n");
+          out.write("                                                                <div class=\"col-lg-4\">\n");
+          out.write("                                                                    <button type=\"button\" class=\"btn btn-danger\">\n");
+          out.write("                                                                        Edit\n");
+          out.write("                                                                    </button>\n");
+          out.write("                                                                </div>\n");
+          out.write("                                                                <div class=\"col-lg-8\">\n");
+          out.write("                                                                    <a href=\"deletecrop\" type=\"submit\" class=\"btn btn-danger\">\n");
+          out.write("                                                                        Delete\n");
+          out.write("                                                                    </a>\n");
+          out.write("                                                                </div>\n");
+          out.write("\n");
+          out.write("                                                            </div>\n");
+          out.write("                                                            <div class=\"row mt-2\">\n");
+          out.write("\n");
+          out.write("                                                                <div class=\"col-12\">\n");
+          out.write("                                                                    <a href=\"pondHarvestRecord_Management?pondID=");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pc.pondID}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("\" type=\"submit\" class=\"btn btn-danger\">\n");
+          out.write("                                                                        Pond_Harvest_Record\n");
+          out.write("                                                                    </a>\n");
+          out.write("                                                                </div>\n");
+          out.write("                                                            </div>\n");
+          out.write("                                                                        \n");
+          out.write("                                                                                                                        <div class=\"row mt-2\">\n");
+          out.write("\n");
+          out.write("                                                                <div class=\"col-12\">\n");
+          out.write("                                                                    <a href=\"pondBreedRecord_Management?pondID=");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pc.pondID}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("\" type=\"submit\" class=\"btn btn-danger\">\n");
+          out.write("                                                                        Pond Breed Record\n");
+          out.write("                                                                    </a>\n");
+          out.write("                                                                </div>\n");
+          out.write("                                                            </div> \n");
+          out.write("                                                                        \n");
+          out.write("                                                                        \n");
+          out.write("                                                            <div class=\"row mt-2\">\n");
+          out.write("\n");
+          out.write("                                                                <div class=\"col-12\">\n");
+          out.write("                                                                    <a href=\"pondSurvivalRateRecord_Management?pondID=");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pc.pondID}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("\" type=\"submit\" class=\"btn btn-danger\">\n");
+          out.write("                                                                        Pond Survival Rate Record\n");
+          out.write("                                                                    </a>\n");
+          out.write("                                                                </div>\n");
+          out.write("                                                            </div>\n");
+          out.write("\n");
+          out.write("                                                            <div class=\"row mt-2\">\n");
+          out.write("\n");
+          out.write("                                                                <div class=\"col-12\">\n");
+          out.write("                                                                    <a href=\"pondWaterEnv_Management?pondID=");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pc.pondID}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("\" type=\"submit\" class=\"btn btn-danger\">\n");
+          out.write("                                                                        Pond Water Env \n");
+          out.write("                                                                    </a>\n");
+          out.write("                                                                </div>\n");
+          out.write("                                                            </div>\n");
+          out.write("                                                        </div>\n");
+          out.write("                                                    </div>\n");
+          out.write("                                                </div>\n");
+          out.write("                                            </div>\n");
+          out.write("                                        </div>\n");
+          out.write("                                    ");
+          int evalDoAfterBody = _jspx_th_c_forEach_0.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_c_forEach_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_forEach_0[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_forEach_0.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_forEach_0.doFinally();
+      _jspx_tagPool_c_forEach_var_items.reuse(_jspx_th_c_forEach_0);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_c_forEach_1(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:forEach
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_1 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    _jspx_th_c_forEach_1.setPageContext(_jspx_page_context);
+    _jspx_th_c_forEach_1.setParent(null);
+    _jspx_th_c_forEach_1.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listcInventoryItem}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_c_forEach_1.setVar("oi");
+    int[] _jspx_push_body_count_c_forEach_1 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_forEach_1 = _jspx_th_c_forEach_1.doStartTag();
+      if (_jspx_eval_c_forEach_1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\n");
+          out.write("                                            <tr>\n");
+          out.write("                                                <th scope=\"row\">3</th>\n");
+          out.write("                                                <td>");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${oi.productName}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</td>\n");
+          out.write("                                                <td>");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${oi.importDate}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</td>\n");
+          out.write("                                                <td>");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${oi.quantity}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</td>\n");
+          out.write("                                                <td>");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${oi.sourceName}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</td>\n");
+          out.write("                                                <td>");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${oi.manufactoringDate}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</td>\n");
+          out.write("                                                <td>");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${oi.expireDate}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</td>\n");
+          out.write("                                            </tr>\n");
+          out.write("                                        ");
+          int evalDoAfterBody = _jspx_th_c_forEach_1.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_c_forEach_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_forEach_1[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_forEach_1.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_forEach_1.doFinally();
+      _jspx_tagPool_c_forEach_var_items.reuse(_jspx_th_c_forEach_1);
+    }
+    return false;
+  }
+}

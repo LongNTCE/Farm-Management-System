@@ -1,0 +1,21 @@
+SMAP
+pond_005fsurvivalrate_005fdetail_jsp.java
+JSP
+*S JSP
+*F
++ 0 pond_survivalrate_detail.jsp
+pond_survivalrate_detail.jsp
+*L
+5,65:54
+70:119,3
+71,36:122
+106:188,11
+107,2:199
+109,7:201,3
+116,3:222
+119:225,3
+120:228
+121:229,3
+122,9:232
+130,11:160
+*E

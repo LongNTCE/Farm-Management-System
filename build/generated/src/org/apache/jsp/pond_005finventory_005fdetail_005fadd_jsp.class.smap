@@ -1,0 +1,16 @@
+SMAP
+pond_005finventory_005fdetail_005fadd_jsp.java
+JSP
+*S JSP
+*F
++ 0 pond_inventory_detail_add.jsp
+pond_inventory_detail_add.jsp
+*L
+1,62:54
+62:196,11
+63:207,6
+64:213
+64,42:118
+106:160,3
+107,16:163
+*E

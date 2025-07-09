@@ -1,0 +1,259 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class facility_005fharvest_005fdetail_005fedit_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_forEach_var_items;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspInit() {
+    _jspx_tagPool_c_forEach_var_items = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+  }
+
+  public void _jspDestroy() {
+    _jspx_tagPool_c_forEach_var_items.release();
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("<!DOCTYPE html>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<html lang=\"en\">\n");
+      out.write("    <head>\n");
+      out.write("        <meta charset=\"UTF-8\" />\n");
+      out.write("        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n");
+      out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n");
+      out.write("        <title>Document</title>\n");
+      out.write("\n");
+      out.write("        <!--Bootstrap 5-->\n");
+      out.write("        <link\n");
+      out.write("            href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\"\n");
+      out.write("            rel=\"stylesheet\"\n");
+      out.write("            integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\"\n");
+      out.write("            crossorigin=\"anonymous\"\n");
+      out.write("            />\n");
+      out.write("\n");
+      out.write("        <!--Font awesome-->\n");
+      out.write("        <link\n");
+      out.write("            rel=\"stylesheet\"\n");
+      out.write("            href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css\"\n");
+      out.write("            integrity=\"sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==\"\n");
+      out.write("            crossorigin=\"anonymous\"\n");
+      out.write("            referrerpolicy=\"no-referrer\"\n");
+      out.write("            />\n");
+      out.write("\n");
+      out.write("        <link rel=\"stylesheet\" href=\"./css/crud.css\" />\n");
+      out.write("    </head>\n");
+      out.write("    <body class=\"add-crop-body\">\n");
+      out.write("        <div class=\"container py-3 h-50\">\n");
+      out.write("            <div class=\"row d-flex justify-content-center align-items-center h-100\">\n");
+      out.write("                <div class=\"col-xl-10\">\n");
+      out.write("                    <div class=\"card rounded-3 text-black\">\n");
+      out.write("                        <div class=\"row g-0\">\n");
+      out.write("\n");
+      out.write("                            <div class=\"col-12 offset-lg-3 col-lg-6\">\n");
+      out.write("                                <div class=\"card-body p-md-5 mx-md-4\">\n");
+      out.write("\n");
+      out.write("                                    <a href=\"#\" class=\"text-decoration-none\"> <h6><i class=\"fa fa-arrow-left ms-auto\" aria-hidden=\"true\"></i> Trở về trang trước</h6> \n");
+      out.write("                                    </a>\n");
+      out.write("                                    <h3 class=\"mt-1 mb-3 pb-1 text-center\">Sửa bản báo cáo thu hoạch</h3>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("                                    <form action=\"EditHarvestRecord\" method=\"post\">\n");
+      out.write("\n");
+      out.write("                                        <div class=\"row form-outline mb-2\">\n");
+      out.write("                                            <label class=\"col-7\">Ngày tháng năm</label>\n");
+      out.write("                                            <input\n");
+      out.write("                                                class=\"col-5\"\n");
+      out.write("                                                type=\"date\"\n");
+      out.write("                                                id=\"\"\n");
+      out.write("                                                required=\"required\"\n");
+      out.write("                                                value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${r.harvestDate}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\"\n");
+      out.write("                                                name=\"harvestRdate\"\n");
+      out.write("                                                class=\"form-control\"\n");
+      out.write("                                                placeholder=\"\"\n");
+      out.write("                                                />\n");
+      out.write("                                        </div>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("                                        <div class=\"row form-outline mb-2\">\n");
+      out.write("                                             <label class=\"col-7\">Tên ao</label>\n");
+      out.write("                                            <div class=\"col-5\"> <select name=\"harvestRpond\"  class=\"form-select\" aria-label=\"Default select example\">\n");
+      out.write("                                                <option value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${r.pondID}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\" selected value>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${r.pondName}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</option>\n");
+      out.write("                                                ");
+      if (_jspx_meth_c_forEach_0(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("                                            </select></div>\n");
+      out.write("                                           \n");
+      out.write("                                        </div> \n");
+      out.write("\n");
+      out.write("                                        <div class=\"row form-outline mb-2\">\n");
+      out.write("                                             <label class=\"col-7\"> Khối lượng</label>\n");
+      out.write("\n");
+      out.write("                                            <input\n");
+      out.write("                                                class=\"col-5\"\n");
+      out.write("                                                type=\"text\"\n");
+      out.write("                                                id=\"\"\n");
+      out.write("                                                required=\"required\"\n");
+      out.write("                                                value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${r.harvestNetWeight}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\"\n");
+      out.write("                                                name=\"harvestNetWeight\"\n");
+      out.write("                                                class=\"form-control\"\n");
+      out.write("                                                placeholder=\"\"\n");
+      out.write("                                                />\n");
+      out.write("                                        </div>\n");
+      out.write("\n");
+      out.write("                                        <div class=\"row form-outline mb-2\">\n");
+      out.write("                                             <label class=\"col-7\">Sản lượng</label>\n");
+      out.write("                                            <input\n");
+      out.write("                                                class=\"col-5\"\n");
+      out.write("                                                type=\"text\"\n");
+      out.write("                                                id=\"\"\n");
+      out.write("                                                required=\"required\"\n");
+      out.write("                                                value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${r.harvestWeight}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\"\n");
+      out.write("                                                name=\"harvestWeight\"\n");
+      out.write("                                                class=\"form-control\"\n");
+      out.write("                                                placeholder=\"\"\n");
+      out.write("                                                />\n");
+      out.write("                                        </div>\n");
+      out.write("\n");
+      out.write("                                        <div class=\"row form-outline mb-2\">\n");
+      out.write("                                             <label class=\"col-7\">Tên và địa chỉ cơ sở thu mua</label>\n");
+      out.write("                                            <input\n");
+      out.write("                                                 class=\"col-5\"\n");
+      out.write("                                                type=\"text\"\n");
+      out.write("                                                id=\"\"\n");
+      out.write("                                                required=\"required\"\n");
+      out.write("                                                value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${r.merchantNameAddress}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\"\n");
+      out.write("                                                name=\"merchantName\"\n");
+      out.write("                                                class=\"form-control\"\n");
+      out.write("                                                placeholder=\"\"\n");
+      out.write("                                                />\n");
+      out.write("                                        </div>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("                                        <div class=\"text-center pt-1 mb-5\">\n");
+      out.write("                                            <button class=\"btn btn-primary btn-block fa-lg gradient-custom-2 mb-6 py-2 px-5\" type=\"submit\">Sửa báo cáo</button>\n");
+      out.write("\n");
+      out.write("                                        </div>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("                                    </form>\n");
+      out.write("\n");
+      out.write("                                </div>\n");
+      out.write("                            </div>\n");
+      out.write("\n");
+      out.write("                        </div>\n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("    </body>\n");
+      out.write("</html>");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+
+  private boolean _jspx_meth_c_forEach_0(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:forEach
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    _jspx_th_c_forEach_0.setPageContext(_jspx_page_context);
+    _jspx_th_c_forEach_0.setParent(null);
+    _jspx_th_c_forEach_0.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listPondByCropID}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_c_forEach_0.setVar("pc");
+    int[] _jspx_push_body_count_c_forEach_0 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_forEach_0 = _jspx_th_c_forEach_0.doStartTag();
+      if (_jspx_eval_c_forEach_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\n");
+          out.write("                                                    <option value=\"");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pc.pondID}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write('"');
+          out.write('>');
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pc.pondName}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</option>\n");
+          out.write("                                                ");
+          int evalDoAfterBody = _jspx_th_c_forEach_0.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_c_forEach_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_forEach_0[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_forEach_0.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_forEach_0.doFinally();
+      _jspx_tagPool_c_forEach_var_items.reuse(_jspx_th_c_forEach_0);
+    }
+    return false;
+  }
+}

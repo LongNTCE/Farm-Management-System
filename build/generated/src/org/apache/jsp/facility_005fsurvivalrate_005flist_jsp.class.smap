@@ -1,0 +1,17 @@
+SMAP
+facility_005fsurvivalrate_005flist_jsp.java
+JSP
+*S JSP
+*F
++ 0 facility_survivalrate_list.jsp
+facility_survivalrate_list.jsp
+*L
+1,73:54
+74:127,3
+75,55:130
+129:394,11
+130,17:405
+147:422,3
+148,25:425
+172,190:187
+*E
