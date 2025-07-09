@@ -1,0 +1,148 @@
+.gradient-custom-2 {
+    background: #00d2ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #3a7bd5,
+      #00d2ff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #3a7bd5,
+      #00d2ff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  @media (min-width: 768px) {
+    .gradient-form {
+      height: 100vh !important;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .gradient-custom-2 {
+      border-top-right-radius: 0.3rem;
+      border-bottom-right-radius: 0.3rem;
+      max-width: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  .login-body {
+    background: #00d2ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #3a7bd5,
+      #00d2ff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #3a7bd5,
+      #00d2ff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+
+  
+  .add-facility-body {
+    background: #00d2ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #3a7bd5,
+      #00d2ff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #3a7bd5,
+      #00d2ff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  .add-crop-body {
+    background: #00d2ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #3a7bd5,
+      #00d2ff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #3a7bd5,
+      #00d2ff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  
+  .add-pond-body {
+    background: #00d2ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #3a7bd5,
+      #00d2ff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #3a7bd5,
+      #00d2ff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  .edit-facility-body {
+    background: #00d2ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #3a7bd5,
+      #00d2ff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #3a7bd5,
+      #00d2ff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  .edit-crop-body {
+    background: #00d2ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #3a7bd5,
+      #00d2ff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #3a7bd5,
+      #00d2ff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+
+  .edit-pond-body {
+    background: #00d2ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #3a7bd5,
+      #00d2ff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #3a7bd5,
+      #00d2ff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+    .add-employee-body {
+    background: #00d2ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #3a7bd5,
+      #00d2ff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #3a7bd5,
+      #00d2ff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+ 
+
+  

@@ -1,0 +1,208 @@
+.jumbotron {
+    margin: 0px auto;
+    padding: 70px 30px;
+    background-color: #9575cd;
+    color: floralwhite;
+    height: 75vh;
+}
+
+/*----  Main Style  ----*/
+#cards_landscape_wrap-2{
+    text-align: center;
+
+    border-radius: 10px;
+}
+#cards_landscape_wrap-2 .container{
+    padding-top: 80px; 
+    padding-bottom: 100px;
+}
+#cards_landscape_wrap-2 a{
+    text-decoration: none;
+    outline: none;
+}
+#cards_landscape_wrap-2 .card-flyer {
+    border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box{
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+    border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box img{
+    -webkit-transition:all .9s ease; 
+    -moz-transition:all .9s ease; 
+    -o-transition:all .9s ease;
+    -ms-transition:all .9s ease; 
+    width: 100%;
+    height: 200px;
+}
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img{
+    opacity: 0.7;
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform:scale(1.15);
+}
+#cards_landscape_wrap-2 .card-flyer .text-box{
+    text-align: center;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container{
+    padding: 30px 18px;
+}
+#cards_landscape_wrap-2 .card-flyer{
+    background: #FFFFFF;
+    margin-top: 50px;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+}
+#cards_landscape_wrap-2 .card-flyer:hover{
+    background: #fff;
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    margin-top: 50px;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box p{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px; 
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #000000;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box h6{
+    margin-top: 0px;
+    margin-bottom: 4px; 
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto Black', sans-serif;
+    letter-spacing: 1px;
+    color: #00acc1;
+}
+
+
+.carousel {
+    background: #00A36C;
+}
+
+.carousel-item {
+    height: 400px;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+#carouselButton {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.navbar-nav {
+    font-size: 18px;
+}
+
+.reset-typography {
+    font-size: 12px;
+}
+
+.custom-type-select {
+    max-width: 50%;
+}
+
+.news-card-row {
+    background-color: #90ee90;
+}
+
+.news-card-row .card {
+    background-color: #90ee90;
+    border: none;
+}
+
+.footer-connect-image1 {
+    width: 22vh;
+    height: 20vh;
+}
+
+.footer-connect-image2 {
+    width: 22vh;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-70px);
+}
+
+.contact-us-link a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: darkgreen;
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.near-footer-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.nav-item.dropdown.dropdown-mega {
+    position: static;
+}
+.nav-item.dropdown.dropdown-mega .dropdown-menu {
+    width: 90%;
+    top: auto;
+    left: 5%;
+}
+
+.dropdown-mega-home:hover .mega-content-home {
+    display: block;
+}
+
+/* Container holding the image and the text */
+.mega-container {
+    position: relative;
+    text-align: center;
+}
+
+.mega-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Bottom left text */
+.bottom-left {
+
+    color: white;
+    border-radius: 15px;
+
+}
+
+.mega-container-div1 {
+    background-image: url("../images/morenew1withblur.jpg");
+    background-color: green;
+}
+
+.mega-container-div2 {
+    background-image: url("../images/infodivblur.jpg");
+    background-color: green;
+}
