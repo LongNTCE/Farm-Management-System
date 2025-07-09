@@ -20,10 +20,10 @@ import static javax.swing.text.html.FormSubmitEvent.MethodType.POST;
  */
 public class DBContext {
 
-    private static final String HOST = "localhost";
-    private static final String DBNAME = "graduation_project";
-    private static final String PORT = "503";
-    private static final String USERNAME = "root";
+    private static final String HOST = "";
+    private static final String DBNAME = "t";
+    private static final String PORT = "";
+    private static final String USERNAME = "";
     private static final String PASSWORD = "";
 
     public static Connection getConnection() throws SQLException, ClassNotFoundException {
